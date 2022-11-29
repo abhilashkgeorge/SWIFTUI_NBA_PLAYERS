@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F563B034292E567500822160 /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563B033292E567500822160 /* StatText.swift */; };
+		F563B036292E5C3A00822160 /* PlayerNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563B035292E5C3A00822160 /* PlayerNames.swift */; };
+		F563B03A292E5D9600822160 /* SinglePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563B039292E5D9600822160 /* SinglePlayer.swift */; };
+		F563B03F292E694000822160 /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F563B03E292E694000822160 /* PlayerList.swift */; };
 		F56659B7292E32CE0048FA94 /* NBA_Player_InformationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56659B6292E32CE0048FA94 /* NBA_Player_InformationApp.swift */; };
-		F56659B9292E32CE0048FA94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56659B8292E32CE0048FA94 /* ContentView.swift */; };
+		F56659B9292E32CE0048FA94 /* PlayerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56659B8292E32CE0048FA94 /* PlayerDetails.swift */; };
 		F56659BB292E32D10048FA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56659BA292E32D10048FA94 /* Assets.xcassets */; };
 		F56659BE292E32D10048FA94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56659BD292E32D10048FA94 /* Preview Assets.xcassets */; };
+		F56659C5292E346D0048FA94 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56659C4292E346D0048FA94 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F563B033292E567500822160 /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
+		F563B035292E5C3A00822160 /* PlayerNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNames.swift; sourceTree = "<group>"; };
+		F563B039292E5D9600822160 /* SinglePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayer.swift; sourceTree = "<group>"; };
+		F563B03E292E694000822160 /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
 		F56659B3292E32CE0048FA94 /* NBA Player Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Player Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56659B6292E32CE0048FA94 /* NBA_Player_InformationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBA_Player_InformationApp.swift; sourceTree = "<group>"; };
-		F56659B8292E32CE0048FA94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F56659B8292E32CE0048FA94 /* PlayerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetails.swift; sourceTree = "<group>"; };
 		F56659BA292E32D10048FA94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56659BD292E32D10048FA94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F56659C4292E346D0048FA94 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F563B03B292E63C900822160 /* FirstPage */ = {
+			isa = PBXGroup;
+			children = (
+				F563B039292E5D9600822160 /* SinglePlayer.swift */,
+				F563B035292E5C3A00822160 /* PlayerNames.swift */,
+				F563B03E292E694000822160 /* PlayerList.swift */,
+			);
+			path = FirstPage;
+			sourceTree = "<group>";
+		};
+		F563B03C292E63EE00822160 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				F56659B8292E32CE0048FA94 /* PlayerDetails.swift */,
+				F563B033292E567500822160 /* StatText.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		F563B03D292E641E00822160 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F56659C4292E346D0048FA94 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F56659AA292E32CE0048FA94 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +88,10 @@
 		F56659B5292E32CE0048FA94 /* NBA Player Information */ = {
 			isa = PBXGroup;
 			children = (
+				F563B03D292E641E00822160 /* Model */,
 				F56659B6292E32CE0048FA94 /* NBA_Player_InformationApp.swift */,
-				F56659B8292E32CE0048FA94 /* ContentView.swift */,
+				F563B03C292E63EE00822160 /* DetailsView */,
+				F563B03B292E63C900822160 /* FirstPage */,
 				F56659BA292E32D10048FA94 /* Assets.xcassets */,
 				F56659BC292E32D10048FA94 /* Preview Content */,
 			);
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56659B9292E32CE0048FA94 /* ContentView.swift in Sources */,
+				F56659B9292E32CE0048FA94 /* PlayerDetails.swift in Sources */,
+				F56659C5292E346D0048FA94 /* Player.swift in Sources */,
+				F563B03A292E5D9600822160 /* SinglePlayer.swift in Sources */,
+				F563B034292E567500822160 /* StatText.swift in Sources */,
 				F56659B7292E32CE0048FA94 /* NBA_Player_InformationApp.swift in Sources */,
+				F563B03F292E694000822160 /* PlayerList.swift in Sources */,
+				F563B036292E5C3A00822160 /* PlayerNames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
