@@ -27,7 +27,7 @@ struct PlayerList: View {
 struct PlayerList_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            PlayerList().previewDevice("iPhone SE (2nd generation)")
+            PlayerList()
         }
     }
 }
